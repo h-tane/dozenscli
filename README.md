@@ -32,20 +32,20 @@ and place it in ~/.dozenscli.conf
 
 ## Synopsis
 
-    $ dozenscli <command> <subcommand> [parameters]
+    $ dozens <command> <subcommand> [parameters]
 
 Use command help for information on a specific command.
 
-    $ dozenscli help
+    $ dozens help
 
     Commands:
-      dozenscli create TYPE     # Create resource. Type can be zone, record
-      dozenscli delete TYPE     # Delete resource. Type can be zone, record
-      dozenscli help [COMMAND]  # Describe available commands or one specific command
-      dozenscli list TYPE       # List resource. Type can be zone, record
-      dozenscli update TYPE     # Update resource. Type can be record
+      dozens create TYPE     # Create resource. Type can be zone, record
+      dozens delete TYPE     # Delete resource. Type can be zone, record
+      dozens help [COMMAND]  # Describe available commands or one specific command
+      dozens list TYPE       # List resource. Type can be zone, record
+      dozens update TYPE     # Update resource. Type can be record
 
 Operation of a record requires JSON data structures as input parameters on the command line.
 
     // Example
-    $ dozenscli create record --params '{"domain":"dozens.jp","name":"www","type":"A","prio":10,"content":"192.168.0.1","ttl":"7200"}'
+    $ dozens create record --params '{"domain":"dozens.jp","name":"www","type":"A","prio":10,"content":"192.168.0.1","ttl":"7200"}'
